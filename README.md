@@ -1,1 +1,2 @@
 # technically-blackjack
+This is a game that I wrote while taking my first JavaScript class. Writing this game proved to be a useful training exercise, familiarizing me with writing to the DOM, creating sprite sheets, using local storage, and the difficulties with integrating sound that supports several platforms. It is written entirely in vanilla JavaScript and only uses one library for sound output.
