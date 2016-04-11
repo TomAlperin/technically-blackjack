@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" id="viewport" content="initial-scale=1.0, target-densitydpi=device-dpi, width=device-width, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link href="css/styles.css?v=1.01" rel="stylesheet" media="screen">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+        <title>Tom Alperin Design</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="About" class="AboutWork">
+                <header>
+                    <h1 id="title">Tom Alperin</h1>
+                    <div id="navBar">
+                        <ul>
+                            <li class="menuItem" onclick="work()">Work</li>
+                            <li class="menuItem" onclick="play()">Play</li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="clear"></div>
+                <div class="a-container" id="flip-it">
+                    <div class="a-flipper">
+                        <div class="a-front" >
+                            <article class="work" id="aboutFront">
+                                <div>
+                                    <div id="art"></div>
+                                    <h2 class="left">Traditional artistry...</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        Traditional artists use a variety of media including oil paints, watercolors, pen, pencil, and pastels. They use a wide
+                                        variety of brushes, and tools to achieve the desired effect, mixing different media types if necessary to create their
+                                        masterpieces. Multiple tools and techniques are seamlessly blended together to achieve their final goal. To be a true artist,
+                                        many disciplines must be mastered.
+                                    </p>
+                                    <p>
+                                        Modern web design has its box of tools. PHP, JavaScript, HTML, and CSS work together to create an immersive user experience.
+                                        Frameworks like Bootstrap and Angular JS help to quickly develop a website that is interactive, immersive, and ready
+                                        for the mobile device generation.
+                                    </p>
+                                    <p></p>
+                                </div>
+                                <div class="divKB">
+                                    <div id="keyboard"></div>
+                                    <h2 class="right">...meets the modern skill set.</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        If the repair man you called shows up with only a hammer to do a complicated job, you probably don't want to let him in.
+                                        If your doctor insists he can cure any problem with one medication, you should seek a second opinion.
+                                        If your surgeon swears he can do the entire operation with only a scalpel, get another surgeon. Complex jobs require
+                                        diverse skill sets. You want people with the necessary tools and skills. You want them to be able to understand and
+                                        communicate with the rest of the team and knowing how the rest of the team works makes that easier.
+                                    </p>
+                                    <p>You want your team to have access to all the modern tools. Combine them with some traditional tools and amazing things can be achieved.</p>
+                                    <p></p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="a-back">
+                            <article class="play">
+                                <div id="heading">
+                                    <div id="hProp" class="hProp">
+                                    </div>
+                                    <div class="geeBee">
+                                    </div>
+                                </div>
+                                <img src="img/Tom.jpg" class="tom" name="Tom"/>
+                                <p>
+                                    &#8220;Play&#8221; suggests recreation, but some of the most challenging coding sometimes involves creating a computer game.
+                                    My name is Tom Alperin. This website is an example of several JavaScript techniques to
+                                    improve the interactivity of a website. This project is my first attempt at writing a website
+                                    that uses JavaScript this heavily. While I am familiar with jQuery, I chose not to use it or any
+                                    other libraries, other than one to provide better sound output called
+                                    <a href="http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library" target="_blank">howler.js</a> written by
+                                    James Simpson. My choice to do this was so the page could demonstrate my understanding of &#8220;Vanilla JavaScript&#8221;, but
+                                    also to hopefully achieve a little better performance. I may eventually set up a duplicate site using jQuery to compare
+                                    performance. Something else I hoped to accomplish was to make the site act as much like a mobile app as
+                                    possible when accessed from a mobile device.
+                                </p>
+                                <p>
+                                    Animations use JavaScript rather than using animated GIF files to avoid limitations of the GIF format. Other techniques include:
+                                </p>
+                                <ul class="myLists">
+                                    <li>Use of sprite sheets to arrange graphics and reduce web site load times.</li>
+                                    <li>3D CSS animation to show the flipping of the dealers card.</li>
+                                    <li>Responsive web design. Buttons are placed differently for portrait and landscape. In landscape,
+                                        buttons are also placed differently for mobile and desktop.</li>
+                                    <li>Smaller mobile screens will display a different set of cards that is easier to read at the reduced size.</li>
+                                    <li><a href="http://diveintohtml5.info/storage.html" target="_blank">LocalStorage</a> not only holds the players score, but every stage of the game. It is possible
+                                        for the player to close the game and return to exactly where they left off. Saving the game is done
+                                        automatically on each move.</li>
+                                    <li>Some sections of HTML are inserted and changed after the game has loaded using &#8220;innerHTML.&#8221;</li>
+                                </ul>
+                                <p>
+                                    I have not done much to prevent cheating for someone familiar with JavaScript. It's your fake money, so have at it! I did however
+                                    try to prevent the possibility of cheating by other means. You can't hit refresh to get a new deck of cards or restore money to your bank
+                                    should you think you have a losing hand. If you want to cheat, you are going to have to learn a little JavaScript and figure things out.
+                                </p>
+                                <p>
+                                    My intentions for writing this page were to not only refresh my programming skills, but to also make a fun game my friends and relatives
+                                    could play.
+                                </p>
+                                <h2>Rules</h2>
+                                <p>Try to achieve highest hand with a value of 21 or less. Face cards have a value of 10. Aces have a value of 11 unless they cause the hand value to
+                                exceed 21 in which case they have a value of 1. All other cards have a value equal to the cards value. Player wins if their hand value exceeds the dealers hand and they have not "busted" by going over 21.
+                                Player also wins if they have not "busted" and the dealer has "busted."</p>
+                                <ul class="myLists">
+                                    <li>Win pays 1:1 players bet.</li>
+                                    <li>Player hand value of 21, "blackjack" with only two cards pays 3:2.</li>
+                                    <li>All ties are called a push and results in the players bet being returned to the player.</li>
+                                    <li>"Surrender" returns half the players bet and is only available as first choice in hand.</li>
+                                    <li>Player hand value of 21, "blackjack" with only two cards pays 3:2.</li>
+                                    <li>"Double" increases the bet to twice its original value and draws only one more card. This is only available after the initial deal</li>
+                                    <li>The Player may also "Split" a hand into two independent hands if the two initial cards are of the same value.</li>
+                                    <li>Splitting is only allowed once per hand.</li>
+                                    <li>Split hands may be "Doubled."</li>
+                                    <li>This game is dealt from two decks.</li>
+                                </ul>
+                                <p>Click the egg to start a game.</p>
+                                <p></p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <a href="http://www.technicallytom.com" target="_blank">
+                        <img class="wp-link" name="technicallytom.com" src="img/logo.png?v=1" />
+                    </a>
+                    <img class="egg" onclick="hideAbout()" src="img/egg.png" title="Click me!"/>
+                </div>
+            </div>
+            <div id="game">
+                <div onclick="showAbout()" id="menu">
+                    <a href="http://www.technicallytom.com" target="_blank">
+                        <img class="wp-link" name="technicallytom.com" src="img/logo.png?v=1" />
+                    </a>
+                    <h1>Blackjack</h1>
+                </div>
+                <div id="TheGame">
+                    <div id="TheDealer">
+                        <h2 class="hand">Dealer</h2>
+                        <h3 id="Bank" class="score" onclick="showStats()"></h3>
+                        <img src="img/card.png" id="DealerCard0" class="hide" />
+                        <div class="flip-container" id="flip-toggle">
+                            <div class ="flipper">
+                                <img src="img/card.png" id="DealerCard1" class="card hide front" />
+                                <img src="img/card.png" id="DealerCardF" class="card hide back" />
+                            </div>
+                        </div>
+                        <img src="img/card.png" id="DealerCard2" class="hide"/>
+                        <img src="img/card.png" id="DealerCard3" class="hide"/>
+                        <img src="img/card.png" id="DealerCard4" class="hide"/>
+                        <img src="img/card.png" id="DealerCard5" class="hide"/>
+                        <img src="img/card.png" id="DealerCard6" class="hide"/>
+                        <img src="img/card.png" id="DealerCard7" class="hide"/>
+                        <img src="img/card.png" id="insurance" onclick="insure()" class="hide" />
+                    </div>
+                    <div class="clear"></div>
+                    <div id="PlayerSplit" class="hide">
+                        <h2 id="st" class="hand">Split</h2>
+                        <h3 id="SplitScore" class="score"></h3>
+                        <img src="img/card.png"  id="PlayerCardSplit0" class="hide" />
+                        <img src="img/card.png"  id="PlayerCardSplit1" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCardSplit2" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCardSplit3" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCardSplit4" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCardSplit5" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCardSplit6" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCardSplit7" class="hide"/>
+                        <div id="SplitBet">
+                            <h4 id="SBet"></h4>
+                        </div>
+                    </div>
+                    <div id="ThePlayer" class="PlayerNoSplit">
+                        <h2 id="pt" class="hand">Player</h2>
+                        <h3 id="PlayerScore" class="score"></h3>
+                        <img src="img/card.png"  id="PlayerCard0" class="hide" />
+                        <img src="img/card.png"  id="PlayerCard1" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCard2" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCard3" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCard4" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCard5" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCard6" class="hide"/>
+                        <img src="img/card.png"  id="PlayerCard7" class="hide"/>
+                        <div id="PlayerBet">
+                            <h4 id="PBet"></h4>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="ControlPanel">
+                    <div id="Controls">
+                    </div>
+                </div>
+                <div id="blackjack">
+                    <div id="prop">
+                    </div>
+                    <div class="geeBee">
+                    </div>
+                </div>
+                <div id="msg" class="hideMsg">
+                </div>
+                <div id="stats" onclick="hideStats()" class="hideAbout">
+                    <h3>Game Stats</h3>
+                    <table>
+                        <tr><td class="c1">Highest Score</td><td class="c2">:</td><td id="highScore" class="c3"></td></tr>
+                        <tr><td class="c1">Games Played</td><td class="c2">:</td><td id="gamesPlayed" class="c3"></td></tr>
+                        <tr><td class="c1">Most Hands</td><td class="c2">:</td><td id="maxHands" class="c3"></td></tr>
+                        <tr><td class="c1">Hands this Game</td><td class="c2">:</td><td id="curHands" class="c3"></td></tr>
+                        <tr><td class="c1">Winning Streak</td><td class="c2">:</td><td id="wins" class="c3"></td></tr>
+                        <tr><td class="c1">Best Winning Streak</td><td class="c2">:</td><td id="maxWins" class="c3"></td></tr>
+                        <tr><td class="c1">Losing Streak</td><td class="c2">:</td><td id="lose" class="c3"></td></tr>
+                        <tr><td class="c1">Worst Losing Streak</td><td class="c2">:</td><td id="maxLose" class="c3"></td></tr>
+                        <tr><td class="c1">Total Won</td><td class="c2">:</td><td id="allWon" class="c3"></td></tr>
+                        <tr><td class="c1">Total Lost</td><td class="c2">:</td><td id="allLost" class="c3"></td></tr>
+                    </table>
+                    <button onclick="resetStats()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <!--<audio id="blackjackSnd" src="snd/blackjack.mp3" preload="auto"></audio>-->
+        <!--<audio id="cardSound" src="snd/card-sound.mp3" preload="auto"></audio>-->
+        <!--<audio id="plink" src="snd/plink.mp3" preload="auto"></audio>-->
+        <!--<audio id="win" src="snd/win.mp3" preload="auto"></audio>-->
+        <!--<audio id="lose" src="snd/lose.mp3" preload="auto"></audio>-->
+        <!--<div class="preLoad">-->
+            <!--<img src="img/kb.jpg" alt="">-->
+            <!--<img src="img/Tom.jpg" alt="">-->
+            <!--<img src="img/logo.png" alt="">-->
+            <!--<img src="img/egg.png" alt="">-->
+            <!--<img src="img/art.jpg" alt="">-->
+            <!--<img src="img/geebee.png" alt="">-->
+            <!--<img src="img/wood.jpg" alt="">-->
+        <!--</div>-->
+        <script type="text/javascript" src="js/howler.min.js"></script>
+        <script type="text/javascript" src="js/blackjack.js?v=1.01"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-59977251-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
